@@ -1,0 +1,9 @@
+<h1>Search Results</h1>
+
+<ul>
+  {% for info in object_list %}
+    <li>
+      <p>Address of {{ info.name}} is {{ info.address }}</p> 
+    </li>
+  {% endfor %}
+</ul>

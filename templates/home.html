@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .home {
+            margin-top: 250px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="back" style="background:  url("/static/images/attention.jpg") 50% 0 no-repeat fixed;">
+    <!-- <div style="background-image: url({% static 'images/attention.jpg' %});"> -->
+            <div class="home">
+                <h1>Collect information</h1>
+                <form action="{% url 'search_results' %}" method="get">
+                    <input name="q" type="text" placeholder="Search...">
+                    <input type="submit" name="submit" value="submit">
+                  </form>
+            </div>
+    </div>
+</body>
+</html>
